@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+.headerList {
+  direction: flex;
+  align-self: center !important;
+}
+
+.headerList a {
+  color: white !important;
+  margin: 10px 0px 10px 0px;
+}
+
+.nav {
+  background-color: #00026345 !important;
+}
+
+.shmurdaDanceGif {
+  width: 100%;
+  height: 783px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.thirdSection {
+  padding: 100px;
+}
+
+.snoopDanceGif {
+  width: 393.09px;
+  height: 393.09px;
+  gap: 0px;
+  border-radius: 50% !important;
+  transform-origin: center;
+  transform: rotate(-3.23deg);
+}
+
+.gradientBorder {
+  border-radius: 20px;
+  border: 1px solid;
+  /* border-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) 0.5; */
+  border-image: linear-gradient(45deg, transparent, #ffffff, transparent) 0.5;
+  border-image-slice: 1;
+  /* background: linear-gradient(45deg, rgba(9, 56, 223, 0.5), rgba(21, 21, 21, 0.5)); */
+  background: linear-gradient(45deg, #0938df, #151515) 0.5;
+  gap: 24px
+}
