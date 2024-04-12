@@ -111,3 +111,11 @@ body {
 .show-border {
   border: 1px solid red;
 }
+
+footer {
+  padding: 80px 10px 30px 10px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

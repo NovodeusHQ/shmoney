@@ -8,7 +8,8 @@
 }
 
 .headerList {
-  direction: flex;
+  direction: flex !important;
+  flex-direction: row;
   align-self: center !important;
 }
 
@@ -21,11 +22,58 @@
   background-color: #00026345 !important;
 }
 
+.shmoneyBanner {
+  color: #3d41fa;
+  font-size: 300px;
+  font-weight: 500 !important;
+  line-height: 390.67px;
+  text-align: center;
+  /* -webkit-text-stroke-width: 18px; */
+  -webkit-text-stroke: 18px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 600px) {
+
+  .bannerContainer {
+    position: relative;
+  }
+
+  .shmoneyBanner {
+    font-size: 100px;
+    line-height: 120px;
+    -webkit-text-stroke: 6px;
+    -webkit-text-stroke-color: #ffffff;
+  }
+
+  .guns {
+    height: 100px !important;
+    left: 50% !important;
+    top: 50% !important;
+    /* transform: translate(0%, 0%); */
+  }
+}
+
+.bannerContainer {
+  position: relative;
+}
+
+.guns {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+}
+
 .shmurdaDanceGif {
   width: 100%;
-  height: 783px;
+  /* height: 783px; */
   padding: 0px;
   margin: 0px;
+  max-width: 100%;
+  height: auto;
 }
 
 .thirdSection {
@@ -33,21 +81,89 @@
 }
 
 .snoopDanceGif {
-  width: 393.09px;
-  height: 393.09px;
+  /* width: 393.09px; */
+  /* height: 393.09px; */
   gap: 0px;
   border-radius: 50% !important;
   transform-origin: center;
   transform: rotate(-3.23deg);
+  max-width: 100%;
+  aspect-ratio: 1 /1 ;
 }
 
 .gradientBorder {
-  border-radius: 20px;
-  border: 1px solid;
-  /* border-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0)) 0.5; */
-  border-image: linear-gradient(45deg, transparent, #ffffff, transparent) 0.5;
-  border-image-slice: 1;
-  /* background: linear-gradient(45deg, rgba(9, 56, 223, 0.5), rgba(21, 21, 21, 0.5)); */
+  /* border-radius: 20px;
+  border: 1px solid transparent;
+  border-image: url("../assets/svgs/UtilitiesFull.svg");
+  border-image-slice: 20;
   background: linear-gradient(45deg, #0938df, #151515) 0.5;
-  gap: 24px
+  gap: 24px */
+
+  position: relative;
+  margin: 30px 0px 30px 0px;
+}
+
+.gradientBorder1 {
+  position: relative;
+  margin: 40px 0px 20px 0px;
+}
+
+.gradientBorder2 {
+  position: relative;
+  margin: 20px 0px 40px 0px;
+}
+
+.gradientMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+  /* linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 10%,
+      rgba(0, 0, 0, 0) 90%,
+      rgba(0, 0, 0, 1) 100%
+    ); */ radial-gradient(
+    ellipse at left bottom,
+    rgba(0, 4, 25, 1) 0%,
+    rgba(0, 4, 25, 1) 15%,
+    rgba(0, 4, 25, 0) 50%,
+    rgba(0, 4, 25, 1) 90%,
+    rgba(0, 4, 25, 1) 100%
+  );
+  pointer-events: none; /* Allow clicks to pass through */
+}
+
+.gradientBorderFill {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 621px;
+  height: 370.4px; */
+  width: 100%;
+  height: 100%;
+}
+
+.fourthSection {
+  background: rgba(61, 65, 250, 1);
+  padding: 52px, 176px, 52px, 176px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 419px;
+  justify-content: center;
+  align-items: center;
 }

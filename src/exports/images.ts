@@ -4,6 +4,10 @@ import DanceGif from "../assets/images/bobby-shmurda-dance.gif";
 import SnoopDance from "../assets/images/snoop-dance.gif";
 import CoolDance from "../assets/images/cool-dance.gif";
 import UtilitiesFull from "../assets/svgs/UtilitiesFull.svg";
+import SolReflection from "../assets/svgs/SolReflection.svg";
+import AIUtilities from "../assets/svgs/AIUtilities.svg";
+import ShmoHead from "../assets/svgs/ShmoHead.svg";
+import WattsWithGuns from "../assets/svgs/Watts.svg";
 
 import twitter from "../assets/svgs/icons/twitter.svg";
 import telegram from "../assets/svgs/icons/telegram.svg";
@@ -17,6 +21,10 @@ export const images = {
     SnoopDance,
     CoolDance,
     UtilitiesFull,
+    SolReflection,
+    AIUtilities,
+    ShmoHead,
+    WattsWithGuns,
 
 
 };

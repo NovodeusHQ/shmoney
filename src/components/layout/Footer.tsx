@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Socials from '../reusables/Socials';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+
+      <Socials color='#000073' />
+      <p className='mt-5'>2024 © ALL RIGHTS RESERVED</p>
+
+    </footer>
   )
 }
 
