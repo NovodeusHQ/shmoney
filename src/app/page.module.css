@@ -35,7 +35,6 @@
 
 /* Adjust font size for smaller screens */
 @media screen and (max-width: 600px) {
-
   .bannerContainer {
     position: relative;
   }
@@ -52,6 +51,10 @@
     left: 50% !important;
     top: 50% !important;
     /* transform: translate(0%, 0%); */
+  }
+
+  .thirdSection {
+    padding: 50px !important;
   }
 }
 
@@ -88,7 +91,7 @@
   transform-origin: center;
   transform: rotate(-3.23deg);
   max-width: 100%;
-  aspect-ratio: 1 /1 ;
+  aspect-ratio: 1 /1;
 }
 
 .gradientBorder {
